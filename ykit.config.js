@@ -34,7 +34,7 @@ function createScript(plugin, pathAlias) {
 }
 
 function initPlugins(configPlugin) {
-  configPlugin = require('../config.js').plugins;
+  configPlugin = require('./config.js').plugins;
   // configPlugin = require('../config.json').plugins;
   var systemConfigPlugin = require('./common/config.js').exts;
 
