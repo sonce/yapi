@@ -8,7 +8,7 @@ module.exports = {
     "port": 27017,
     "user": process.env.connectUser,
     "pass": process.env.connectPass,
-    "authSource": ""
+    "authSource": "yapi"
   },
   "mail": {
     "enable": true,
