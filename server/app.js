@@ -57,6 +57,7 @@ app.use(async (ctx, next) => {
 app.use(koaStatic(yapi.path.join(yapi.WEBROOT, 'static'), { index: indexFile, gzip: true }));
 var PORT = yapi.WEBCONFIG.PORT
 var HOST = process.env.HOST || '0.0.0.0';
+console.log(`1Our app is running on ${HOST} and port ${PORT}`);
 app.listen(PORT, HOST, () => {
   console.log(`Our app is running on ${HOST} and port ${PORT}`);
 });
