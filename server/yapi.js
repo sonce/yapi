@@ -9,7 +9,7 @@ let mail;
 const WEBROOT = path.resolve(__dirname, '..'); //路径
 const WEBROOT_SERVER = __dirname;
 const WEBROOT_RUNTIME = path.resolve(__dirname, '../..');
-const WEBROOT_LOG = path.join(WEBROOT_RUNTIME, 'log');
+const WEBROOT_LOG = path.join(__dirname, 'log');
 const WEBCONFIG = config;
 
 fs.ensureDirSync(WEBROOT_LOG);
