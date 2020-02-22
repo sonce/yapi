@@ -1,5 +1,5 @@
 module.exports = {
-  "port": process.env.PORT,
+  "port": process.env.PORT || 3000,
   "adminAccount": "admin@admin.com",
   "db": {
     "connectString": process.env.connectString,

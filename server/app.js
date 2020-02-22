@@ -56,7 +56,7 @@ app.use(async (ctx, next) => {
 
 app.use(koaStatic(yapi.path.join(yapi.WEBROOT, 'static'), { index: indexFile, gzip: true }));
 
-app.listen(yapi.WEBCONFIG.port);
+app.listen(yapi.WEBCONFIG.port,process.env.HOST || '0.0.0.0');
 commons.log(
   `服务已启动，请打开下面链接访问: \nhttp://127.0.0.1${
     yapi.WEBCONFIG.port == '80' ? '' : ':' + yapi.WEBCONFIG.port
