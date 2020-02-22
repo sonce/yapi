@@ -55,10 +55,14 @@ app.use(async (ctx, next) => {
 });
 
 app.use(koaStatic(yapi.path.join(yapi.WEBROOT, 'static'), { index: indexFile, gzip: true }));
+var PORT = yapi.WEBCONFIG.PORT
+var HOST = process.env.HOST || '0.0.0.0';
+app.listen(PORT, HOST, () => {
+  console.log(`Our app is running on ${HOST} and port ${PORT}`);
+});
 
-app.listen(process.env.PORT,'0.0.0.0');
 commons.log(
   `服务已启动，请打开下面链接访问: \nhttp://127.0.0.1${
-    yapi.WEBCONFIG.port == '80' ? '' : ':' + yapi.WEBCONFIG.port
+  PORT == '80' ? '' : ':' + PORT
   }/`
 );
