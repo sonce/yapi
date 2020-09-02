@@ -1,3 +1,6 @@
+用于在heroku搭建
+https://blog.zhugeliang.me/2019/04/27/host-yapi-with-heroku-and-mongodb-atlas/
+
 ## YApi  可视化接口管理平台
 示例站点：
 <p><a target="_blank" href="http://yapi.demo.qunar.com">yapi.demo.qunar.com</a></p>
